@@ -8,4 +8,4 @@ RUN pip3 install Flask
 COPY . /src
 WORKDIR /src
 
-CMD [“python3”,“unh698.py”]
+
