@@ -1,7 +1,5 @@
 FROM ubuntu:xenial
 
-RUN pip install Flask
-
 COPY . /src
 WORKDIR /src
 
