@@ -9,4 +9,4 @@ COPY . /src
 WORKDIR /src
 
 EXPOSE 5000
-CMD [“python3”, “unh698_test.py”]
+CMD [“python”, “unh698_test.py”]
