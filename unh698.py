@@ -6,4 +6,9 @@ def hello_world():
     return 'UNH698 Website'
 
 if __name__== '_main_':
-	app.run(debug=True, host='0.0.0.0')
+	port = int(ubuntu.environ.get('PORT', 5000))
+
+	if port == 5000:
+		app.debug = True
+
+	app.run(host='0.0.0.0', port=port)
