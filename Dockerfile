@@ -9,5 +9,4 @@ COPY . /src
 WORKDIR /src
 
 EXPOSE 5000
-
-RUN python3 unh698_test.py
+CMD [“python3”, “unh698_test.py”]
