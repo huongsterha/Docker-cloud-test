@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-RUN pip3 install Flask
+RUN pip install Flask
 
 COPY . /src
 WORKDIR /src
