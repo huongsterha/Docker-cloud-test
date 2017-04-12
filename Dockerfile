@@ -8,5 +8,5 @@ RUN pip3 install Flask
 COPY . /src
 WORKDIR /src
 
-EXPOSE 5000
+EXPOSE 8080
 RUN python3 unh698_test.py
