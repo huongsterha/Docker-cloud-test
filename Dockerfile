@@ -8,5 +8,5 @@ RUN pip3 install Flask==0.10.1
 COPY . /src
 WORKDIR /src
 
-ENTRYPOINT [“python3”] 
+ENTRYPOINT [“python”] 
 CMD [“unh698test.py”]
