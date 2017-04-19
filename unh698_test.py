@@ -42,9 +42,9 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_my_topic(self):
         # Replace '/' with the page path you want to make
-        rv = self.app.get('/coffee')  
+        rv = self.app.get('/Coffee')  
         # Replace UNH698 Website with the text you expect to see on you topic page
-        assert b'Coffee is cool' in rv.data 
+        assert b'Coffee' in rv.data 
 
 
 
