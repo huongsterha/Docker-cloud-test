@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def main():
     return render_template('coffee.html')
-@app.route('/coffee')
+@app.route('/Coffee')
 def coffee():
 	return render_template('decafCoffee.html')
 
