@@ -8,7 +8,7 @@ def main():
 def coffee():
 	return render_template('coffee.html')
 @app.route('/coffeeInfo')
-def coffee():
+def linktocoffee():
 	return render_template('decafCoffee.html')
 
 if __name__== '__main__':
