@@ -1,5 +1,8 @@
 from flask import Flask, render_template
+from prometheus_metrics import setup_metrics
+
 app = Flask(__name__)
+setup_metrics(app)
 
 @app.route('/')
 def main():
@@ -9,7 +12,7 @@ def main():
 def coffee():
     return render_template('coffee.html')
     
-@app.route('/coffeeInfo')
+@app.route('/Coffee/coffeeInfo')
 def linktocoffee():
     return render_template('decafCoffee.html')
 
